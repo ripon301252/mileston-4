@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let numbers = [5, 6, 7, 89, 90, 25, 36, 66, 99, 50, 76, 80, 96];
+        // Array all element
+        console.log(numbers); 
+        // Array total element
+        console.log('Array element is', numbers.length , 'pcs'); // lenght (array er moddhe koi ta upadan/element ase ta janar jonno)
+        // Get element value by index
+        console.log('10 number index is' , numbers[10]); // index (array er moddhe upadan/element er obosthan koto tomo ta nirbachon korar jonno index use kora, 0 theke index shuru hoi)
+
+        // set or updete element value by index
+        let abc = 45;
+        abc = 99;
+        console.log(abc);
+        numbers[1] = 999;
+        console.log(numbers); 
+
+        // Arrays add to element from last
+                                                let ages = []; // empty array
+        let prices = [44, 66, 78, 98];
+
+        console.log(prices);
+        prices.push(99);
+        prices.push(85);
+        prices.push(77, 75, 86);
+        console.log(prices);
+
+        const freinds = ['Abul', 'Babul', 'kabul', 'Bulbul', 'Sabul'];
+        console.log(freinds);
+        freinds.push('Balam' , 'Salam')
+        console.log(freinds);
+
+        // Arrays remove to element from last
+        freinds.pop();
+        console.log(freinds);
+        freinds.pop();
+        console.log(freinds);
+        const out1 = freinds.pop();
+        const out2 = freinds.pop();
+        console.log(out1, out2);
+
+
+        // Arrays remove to element from first
+        const friuts = ['Mango', 'Apple', 'Banana', 'Great', 'Ata', 'Labu'];
+        console.log(friuts);
+        friuts .shift();
+        friuts .shift();
+        console.log(friuts);
+
+         // Arrays add to element from last
+         const positions = ['1st', '2nd', '3rd', '4th','5th','6th']
+        console.log(positions);
+        positions.unshift('7th', '8th')
+        console.log(positions);
+
+
+        // Justify arrays element
+        console.log(positions.includes('6th'));
+        console.log(positions.includes('9th'));
+        console.log(friuts.includes('Mango'));
+
+        if(positions.includes('1st')){
+            console.log('tumi pora shoona koreso')
+        }
+        else{
+            console.log('tumi poro nai')
+        }
+
+
+        //know the arrays index number in element
+        console.log(positions.indexOf('6th'));
+        console.log(friuts.indexOf('Great'));
+        console.log(friuts.indexOf('Mango'));
+
+        // justify arrays 
+        const nums = [];
+        const food = 'ros 0 gol l a';
+        console.log(Array.isArray(positions));
+        console.log(Array.isArray(friuts));
+        console.log(Array.isArray(food));
+        console.log(Array.isArray(nums));
+        console.log(Array.isArray(nums));
+
+        //----------------------------------------------------------------
+        const passed = [true, false, true, false];
+        console.log(passed);
+
+        const mixedArray = [12, 'Gazipur', true, 45.565];
+        console.log(mixedArray);
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
